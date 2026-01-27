@@ -1,525 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title> – Deva Rentals</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us – Deva Rentals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ================= HEADER ================= -->
-    <nav id="mainHeader" class="navbar navbar-expand-lg navbar-dark main-nav">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <nav id="mainHeader" class="navbar navbar-expand-lg navbar-dark main-nav">
       <div class="container-fluid px-4">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <strong>Deva Rentals</strong>
-        </a>
+          <a class="navbar-brand d-flex align-items-center" href="#">
+              <strong>Deva Rentals</strong>
+          </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-            <!-- ABOUT US DROPDOWN -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="aboutDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                About Us
-              </a>
+          <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          About Us
+                      </a>
 
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="aboutDropdown"
-              >
-                <li>
-                  <a class="dropdown-item" href="about.html">Who We Are</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="why-deva.html"
-                    >Why Deva Rentals</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
-                <li>
-                  <a class="dropdown-item" href="careers.html">Careers</a>
-                </li>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Who We Are</a></li>
+                          <li><a class="dropdown-item" href="#">Our Team</a></li>
+                          <li><a class="dropdown-item" href="#">Mission & Vision</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Landlord Inquiries</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Rental Application</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Service Request</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Schedule Viewing</a>
+                  </li>
               </ul>
-            </li>
+          </div>
+      </div>
+  </nav>
 
-            <!-- OTHER LINKS -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">Landlord Inquiries</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Rental Application</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Service Request</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Schedule Viewing</a>
-            </li>
+
+  <!-- ================= HERO ================= -->
+  <section id="about" class="hero about-hero">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>About Us</h1>
+          <p>
+            For over 8 years, Deva Rentals has helped Edmonton property owners
+            protect their investments, reduce vacancies, and eliminate
+            the daily stress of property management.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= WHAT WE ARE ABOUT ================= -->
+  <section class="split-section">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- IMAGES -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="image-collage">
+            <img src="img/img1.webp" alt="">
+          </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="col-lg-6 ps-lg-5">
+          <h3 class="section-title">What We Are About</h3>
+          <p>
+            Transform your Edmonton rental property into a stress-free investment.
+            For 8+ years, Deva Rentals has delivered rock-solid results for property owners.
+          </p>
+          <p>
+            From tenant screening to maintenance and compliance, we manage the details
+            so you don’t have to.
+          </p>
+
+          <div class="certified">
+            <i class="bi bi-patch-check-fill"></i>
+            <span>A Certified Company</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY DEVA RENTALS ================= -->
+  <section class="split-section bg-soft">
+    <div class="container">
+      <div class="row align-items-center flex-lg-row-reverse">
+
+        <!-- IMAGE -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="img/img2.webp" class="img-fluid section-img" alt="">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="col-lg-6 pe-lg-5">
+          <h3 class="section-title">Why Deva Rentals</h3>
+          <p>
+            Stop struggling with landlord nightmares. High tenant turnover,
+            delayed repairs, and unreliable contractors destroy profitability.
+          </p>
+
+          <ul class="check-list">
+            <li>Lower vacancy rates</li>
+            <li>Higher ROI through expert management</li>
+            <li>Fast maintenance response</li>
+            <li>Full Alberta legal compliance</li>
           </ul>
         </div>
+
       </div>
-    </nav>
-    <!-- ================= HERO ================= -->
-    <section id="hero" class="hero about-hero">
-      <div class="hero-overlay"></div>
-      <video autoplay muted loop playsinline>
-        <source
-          src="https://cdn.prod.website-files.com/655293f1e75ab95bbb78e045/6557d11066017e0cf5c427f6_output(compress-video-onlinecom) (4)-transcode.mp4"
-          type="video/mp4"
-        />
-      </video>
+    </div>
+  </section>
 
-      <div class="container hero-content">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>Projects</h1>
-            <p>
-              For over 8 years, Deva Rentals has helped Edmonton property owners
-              protect their investments, reduce vacancies, and eliminate the
-              daily stress of property management.
-            </p>
-          </div>
+  <!-- ================= FOR LANDLORDS ================= -->
+  <section class="split-section">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- IMAGE -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="img/img3.webp" class="img-fluid section-img" alt="">
         </div>
+
+        <!-- CONTENT -->
+        <div class="col-lg-6 ps-lg-5">
+          <h3 class="section-title">For Landlords</h3>
+          <p>
+            Managing rental property shouldn’t feel like a full-time job.
+            We deliver complete, hands-off property management solutions.
+          </p>
+
+          <ul class="check-list">
+            <li>Tenant screening & leasing</li>
+            <li>Rent collection & reporting</li>
+            <li>Maintenance & repairs</li>
+            <li>Vacancy & marketing management</li>
+          </ul>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ================= PROJECT CATEGORIES ================= -->
-    <section class="project-categories">
-      <div class="container text-center">
-        <ul class="category-list">
-          <li class="active" data-category="all">All</li>
-          <li data-category="apartment">Apartments</li>
-          <li data-category="house">Houses</li>
-          <li data-category="villa">Villas</li>
-          <li data-category="commercial">Commercial</li>
-        </ul>
+  <!-- ================= FOR TENANTS ================= -->
+  <section class="split-section bg-soft">
+    <div class="container">
+      <div class="row align-items-center flex-lg-row-reverse">
+
+        <!-- IMAGE -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="img/img4.webp" class="img-fluid section-img" alt="">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="col-lg-6 pe-lg-5">
+          <h3 class="section-title">For Tenants</h3>
+          <p>
+            Experience responsive rental management built around your comfort.
+            We prioritize communication, fairness, and fast issue resolution.
+          </p>
+
+          <ul class="check-list">
+            <li>Fast maintenance support</li>
+            <li>Clear communication</li>
+            <li>Well-maintained homes</li>
+            <li>Fair and transparent dealings</li>
+          </ul>
+        </div>
+
       </div>
-    </section>
-    <section class="filter-bar">
-      <div class="container">
-        <div class="filter-box">
-          <input type="text" id="keyword" placeholder="Enter Keyword" />
+    </div>
+  </section>
 
-          <select id="type">
-            <option value="all">Property Type</option>
-            <option value="apartment">Apartment</option>
-            <option value="house">House</option>
-            <option value="villa">Villa</option>
-          </select>
 
-          <select id="location">
-            <option value="all">Select Location</option>
-            <option value="edmonton">Edmonton</option>
-            <option value="calgary">Calgary</option>
-          </select>
 
-          <button onclick="filterProperties()">Search Properties</button>
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h3 class="footer-logo">Deva Rentals</h3>
+          <p>
+            We are a real estate investment company focused on building
+            strong communities and delivering long-term value.
+          </p>
         </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">News & Insights</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Follow Us</h5>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
       </div>
-      <section class="property-section">
-        <div class="property-grid">
-      
-          <!-- CARD -->
-          <div class="property-card">
-            <div class="image-wrap">
-              <span class="badge">POPULAR</span>
-              <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c" alt="House">
-            </div>
-      
-            <div class="card-body">
-              <div class="price">$4,500<span>/Month</span></div>
-              <h3>Palm Harbor</h3>
-              <p class="address">2821 Lake Sevilla, Palm Harbor, TX</p>
-      
-              <div class="meta">
-                <div><i class="bi bi-house-door"></i> 3 Beds</div>
-                <div><i class="bi bi-droplet"></i> 2 Bathrooms</div>
-                <div><i class="bi bi-aspect-ratio"></i> 6×7.5 m²</div>
-              </div>
-      
-              <button class="wishlist">
-                <i class="bi bi-heart"></i>
-              </button>
-            </div>
-          </div>
-      
-          <!-- CARD -->
-          <div class="property-card">
-            <div class="image-wrap">
-              <span class="badge">POPULAR</span>
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="House">
-            </div>
-      
-            <div class="card-body">
-              <div class="price">$4,500<span>/Month</span></div>
-              <h3>Beverly Springfield</h3>
-              <p class="address">2821 Lake Sevilla, Palm Harbor, TX</p>
-      
-              <div class="meta">
-                <div><i class="bi bi-house-door"></i> 3 Beds</div>
-                <div><i class="bi bi-droplet"></i> 2 Bathrooms</div>
-                <div><i class="bi bi-aspect-ratio"></i> 6×7.5 m²</div>
-              </div>
-      
-              <button class="wishlist">
-                <i class="bi bi-heart"></i>
-              </button>
-            </div>
-          </div>
-      
-          <!-- CARD -->
-          <div class="property-card">
-            <div class="image-wrap">
-              <span class="badge">POPULAR</span>
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="House">
-            </div>
-      
-            <div class="card-body">
-              <div class="price">$4,500<span>/Month</span></div>
-              <h3>Faulkner Ave</h3>
-              <p class="address">2821 Lake Sevilla, Palm Harbor, TX</p>
-      
-              <div class="meta">
-                <div><i class="bi bi-house-door"></i> 3 Beds</div>
-                <div><i class="bi bi-droplet"></i> 2 Bathrooms</div>
-                <div><i class="bi bi-aspect-ratio"></i> 6×7.5 m²</div>
-              </div>
-      
-              <button class="wishlist">
-                <i class="bi bi-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="property-card">
-            <div class="image-wrap">
-              <span class="badge">POPULAR</span>
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="House">
-            </div>
-      
-            <div class="card-body">
-              <div class="price">$4,500<span>/Month</span></div>
-              <h3>Faulkner Ave</h3>
-              <p class="address">2821 Lake Sevilla, Palm Harbor, TX</p>
-      
-              <div class="meta">
-                <div><i class="bi bi-house-door"></i> 3 Beds</div>
-                <div><i class="bi bi-droplet"></i> 2 Bathrooms</div>
-                <div><i class="bi bi-aspect-ratio"></i> 6×7.5 m²</div>
-              </div>
-      
-              <button class="wishlist">
-                <i class="bi bi-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="property-card">
-            <div class="image-wrap">
-              <span class="badge">POPULAR</span>
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="House">
-            </div>
-      
-            <div class="card-body">
-              <div class="price">$4,500<span>/Month</span></div>
-              <h3>Faulkner Ave</h3>
-              <p class="address">2821 Lake Sevilla, Palm Harbor, TX</p>
-      
-              <div class="meta">
-                <div><i class="bi bi-house-door"></i> 3 Beds</div>
-                <div><i class="bi bi-droplet"></i> 2 Bathrooms</div>
-                <div><i class="bi bi-aspect-ratio"></i> 6×7.5 m²</div>
-              </div>
-      
-              <button class="wishlist">
-                <i class="bi bi-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="property-card">
-            <div class="image-wrap">
-              <span class="badge">POPULAR</span>
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="House">
-            </div>
-      
-            <div class="card-body">
-              <div class="price">$4,500<span>/Month</span></div>
-              <h3>Faulkner Ave</h3>
-              <p class="address">2821 Lake Sevilla, Palm Harbor, TX</p>
-      
-              <div class="meta">
-                <div><i class="bi bi-house-door"></i> 3 Beds</div>
-                <div><i class="bi bi-droplet"></i> 2 Bathrooms</div>
-                <div><i class="bi bi-aspect-ratio"></i> 6×7.5 m²</div>
-              </div>
-      
-              <button class="wishlist">
-                <i class="bi bi-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="property-card">
-            <div class="image-wrap">
-              <span class="badge">POPULAR</span>
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="House">
-            </div>
-      
-            <div class="card-body">
-              <div class="price">$4,500<span>/Month</span></div>
-              <h3>Faulkner Ave</h3>
-              <p class="address">2821 Lake Sevilla, Palm Harbor, TX</p>
-      
-              <div class="meta">
-                <div><i class="bi bi-house-door"></i> 3 Beds</div>
-                <div><i class="bi bi-droplet"></i> 2 Bathrooms</div>
-                <div><i class="bi bi-aspect-ratio"></i> 6×7.5 m²</div>
-              </div>
-      
-              <button class="wishlist">
-                <i class="bi bi-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="property-card">
-            <div class="image-wrap">
-              <span class="badge">POPULAR</span>
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="House">
-            </div>
-      
-            <div class="card-body">
-              <div class="price">$4,500<span>/Month</span></div>
-              <h3>Faulkner Ave</h3>
-              <p class="address">2821 Lake Sevilla, Palm Harbor, TX</p>
-      
-              <div class="meta">
-                <div><i class="bi bi-house-door"></i> 3 Beds</div>
-                <div><i class="bi bi-droplet"></i> 2 Bathrooms</div>
-                <div><i class="bi bi-aspect-ratio"></i> 6×7.5 m²</div>
-              </div>
-      
-              <button class="wishlist">
-                <i class="bi bi-heart"></i>
-              </button>
-            </div>
-          </div>
-          <div class="property-card">
-            <div class="image-wrap">
-              <span class="badge">POPULAR</span>
-              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="House">
-            </div>
-      
-            <div class="card-body">
-              <div class="price">$4,500<span>/Month</span></div>
-              <h3>Faulkner Ave</h3>
-              <p class="address">2821 Lake Sevilla, Palm Harbor, TX</p>
-      
-              <div class="meta">
-                <div><i class="bi bi-house-door"></i> 3 Beds</div>
-                <div><i class="bi bi-droplet"></i> 2 Bathrooms</div>
-                <div><i class="bi bi-aspect-ratio"></i> 6×7.5 m²</div>
-              </div>
-      
-              <button class="wishlist">
-                <i class="bi bi-heart"></i>
-              </button>
-            </div>
-          </div>
-      
-      
-        </div>
-      </section>
-      <section class="testimonial-wrap">
-        <div class="container-fluid">
-            <div class="row align-items-center">
 
-                <!-- LEFT IMAGE -->
-                <div class="col-lg-6 position-relative">
-                    <div class="image-mask">
-                        <img src="https://realestics.temptics.com/assets/img/testimonial-img.jpg" alt="">
-                    </div>
-                </div>
+      <hr>
 
-                <!-- RIGHT CONTENT -->
-                <div class="col-lg-6 text-white">
-                    <small class="certified-title">Testimonials</small>
-                    <h2 class="mb-4 text-dark">What Our Clients Say</h2>
+      <div class="text-center copyright">
+        © 2026 Deva Rentals. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
 
-                    <div class="testimonial-slider">
-                        <div class="testimonial-track" id="t-track">
+  <!-- ================= SCRIPTS ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-                            <!-- CARD -->
-                            <div class="t-card active">
-                                <div class="t-head">
-                                    <img src="https://i.pravatar.cc/60?1">
-                                    <div>
-                                        <strong>Kathryn Murphy</strong><br>
-                                        <small>Medical Assistant</small>
-                                        <div class="stars">★★★★★</div>
-                                    </div>
-                                    <span class="quote">“</span>
-                                </div>
-                                <p>
-                                    Consectetur adipiscing elit. Integer nunc viverra laoreet est the
-                                    porta pretium metus aliquam.
-                                </p>
-                            </div>
+  <script>
+    const header = document.querySelector('.main-nav');
 
-                            <div class="t-card">
-                                <div class="t-head">
-                                    <img src="https://i.pravatar.cc/60?2">
-                                    <div>
-                                        <strong>Brooklyn Simmons</strong><br>
-                                        <small>Designer</small>
-                                        <div class="stars">★★★★★</div>
-                                    </div>
-                                    <span class="quote">“</span>
-                                </div>
-                                <p>
-                                    Aenean pulvinar maximus leo, at gravida elit posuere nec.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- dots -->
-                    <div class="dots">
-                        <span onclick="slideT(0)" class="active"></span>
-                        <span onclick="slideT(1)"></span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-      <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-
-                <!-- LOGO / ABOUT -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h3 class="footer-logo">Deva Rentals</h3>
-                    <p>
-                        We are a real estate investment company focused on building
-                        strong communities and delivering long-term value.
-                    </p>
-                </div>
-
-                <!-- MENU -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Company</h5>
-                    <ul>
-                        <li><a href="#">Who We Are</a></li>
-                        <li><a href="#">What We Do</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">News & Insights</a></li>
-                    </ul>
-                </div>
-
-                <!-- QUICK LINKS -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Quick Links</h5>
-                    <ul>
-                        <li><a href="#">Investors</a></li>
-                        <li><a href="#">Properties</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <!-- SOCIAL -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h5>Follow Us</h5>
-                    <div class="footer-social">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <hr>
-
-            <div class="text-center copyright">
-                © 2026 Deva Rentals. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
-
-    <script>
-      const items = document.querySelectorAll(".property-item");
-      const categories = document.querySelectorAll(".category-list li");
-
-      let activeCategory = "all";
-
-      categories.forEach((cat) => {
-        cat.addEventListener("click", () => {
-          categories.forEach((c) => c.classList.remove("active"));
-          cat.classList.add("active");
-          activeCategory = cat.dataset.category;
-          filterProperties();
-        });
-      });
-
-      function filterProperties() {
-        const keyword = document.getElementById("keyword").value.toLowerCase();
-        const type = document.getElementById("type").value;
-        const location = document.getElementById("location").value;
-
-        items.forEach((item) => {
-          const title = item.innerText.toLowerCase();
-          const itemType = item.dataset.type;
-          const itemLocation = item.dataset.location;
-          const itemCategory = item.dataset.category;
-
-          const matchKeyword = title.includes(keyword);
-          const matchType = type === "all" || itemType === type;
-          const matchLocation = location === "all" || itemLocation === location;
-          const matchCategory =
-            activeCategory === "all" || itemCategory === activeCategory;
-
-          if (matchKeyword && matchType && matchLocation && matchCategory) {
-            item.style.display = "block";
-          } else {
-            item.style.display = "none";
-          }
-        });
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {   // 100px scroll ke baad sticky
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
       }
-    </script>
-  </body>
+    });
+  </script>
+
+  <script>
+    const counters = document.querySelectorAll(".counter");
+    let hasAnimated = false;
+
+    const runCounters = () => {
+      counters.forEach(counter => {
+        const target = +counter.dataset.target;
+        const duration = 2000;
+        const increment = target / (duration / 16);
+
+        let current = 0;
+
+        const update = () => {
+          current += increment;
+          if (current < target) {
+            counter.textContent = Math.floor(current) + "+";
+            requestAnimationFrame(update);
+          } else {
+            counter.textContent = target + "+";
+          }
+        };
+
+        update();
+      });
+    };
+
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting && !hasAnimated) {
+        hasAnimated = true;
+        runCounters();
+        observer.disconnect();
+      }
+    }, { threshold: 0.4 });
+
+    observer.observe(document.getElementById("impact"));
+  </script>
+
+
+</body>
+
 </html>
