@@ -18,7 +18,7 @@
 
 <body>
   <!--======navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top main-nav">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top main-nav">
     <div class="container nav-mobile px-4">
 
       <a class="navbar-brand" href="#">
@@ -732,7 +732,12 @@
   <!-- Product Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+  <script>
+    window.addEventListener("scroll", function () {
+      const nav = document.querySelector(".main-nav");
+      nav.classList.toggle("stuck", window.scrollY > 10);
+    });
+  </script>
   <script>
     var swiper = new Swiper(".product-swiper", {
       slidesPerView: 4,
