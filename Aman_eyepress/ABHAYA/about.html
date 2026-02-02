@@ -1,753 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>PIER 4 – Hero Layout</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <title>PIER 4 – Hero Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Font (serif like screenshot) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- Google Font (serif like screenshot) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+<body>
+  <!--======navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top main-nav">
+    <div class="container nav-mobile px-4">
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+      <a class="navbar-brand" href="#">
+        <img src="img/abhaya-logo.png" alt="">
+      </a>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false">
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+      </button>
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="product-category.html">Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="application-lab.html">Application Lab</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
 
-  </head>
+    </div>
+  </nav>
 
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- ================= ABOUT HERO ================= -->
+<section class="category-hero-product"
+  style="background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat; position:relative;">
 
-    <!-- ================= HEADER ================= -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-nav">
-      <div class="container-fluid px-4">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <strong>ABHAYA</strong>
-          <!-- <img src="logo.jpg" alt="" style="width: 100%; height: 76px;"> -->
-        </a>
-
-        <button
-          class="navbar-toggler custom-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-        >
-          <span class="toggler-line"></span>
-          <span class="toggler-line"></span>
-          <span class="toggler-line"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center"></li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html" data-bs-toggle="dropdown">About Us</a>
-              </li> 
-
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="dropdown">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Application Lab</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Insights</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Careers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
+  <div class="category-hero-overlay">
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-lg-10 text-white">
+          <h1 class="fw-bold mb-3">About Us</h1>
         </div>
       </div>
-    </nav>
-    <!-- ================= HERO ================= -->
-    <section class="hero-slider">
-      <div
-        id="mainSlider"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
-    
+    </div>
+  </div>
 
-        <!-- slides -->
-        <div class="carousel-inner">
-          <div
-            class="carousel-item active"
-            style="background-image: url('GettyImages-1481820418.webp')"
-          >
-            <div class="overlay"></div>
-            <div class="container h-100 d-flex align-items-center">
-              <div class="hero-content">
-                <h1>About Us</h1>
-                <p>
-                 Lets Explore our story
-                </p>
-                <a href="#" class="btn btn-outline-light">View more</a>
-              </div>
-            </div>
-          </div>
+</section>
 
-    </section>
-    <section class="inspiration-section py-5">
-        <div class="container">
-          <div class="row align-items-center g-5">
-      
-            <!-- LEFT : IMAGE STACK -->
-            <div class="col-lg-6">
-              <div class="inspiration-image-wrapper">
-                <!-- background image -->
-                <img
-                  src="protien.png"
-                  alt="Our Inspiration Background"
-                  class="inspiration-bg"
-                />
-      
-                <!-- foreground / motto image -->
-                <img
-                  src="protien.png"
-                  alt="Our Motto"
-                  class="inspiration-foreground"
-                />
-              </div>
-            </div>
-      
-            <!-- RIGHT : CONTENT -->
-            <div class="col-lg-6">
-              <h2>Our Inspiration</h2>
-              <p>
-                Our inspiration is rooted in building long-term partnerships driven by
-                trust, integrity, and quality. We believe that strong foundations and
-                shared values enable consistent growth for both our customers and
-                partners.
-              </p>
-              <p>
-                By combining technical expertise with a people-centric approach, we
-                strive to deliver ingredient solutions that create lasting impact.
-              </p>
-            </div>
-      
-          </div>
-        </div>
-      </section>
-      
-      <section class="what-we-do-section py-5 bg-light">
-        <div class="container">
-      
-          <!-- Header -->
-          <div class="text-center mb-5">
-            <h2>What We Do</h2>
-            <p class="col-lg-8 mx-auto">
-              We deliver end-to-end ingredient solutions that support innovation,
-              performance, and reliable growth across industries.
-            </p>
-          </div>
-      
-          <!-- Cards -->
-          <div class="row g-4">
-      
-            <div class="col-md-4">
-              <div class="what-card">
-                <div class="what-icon">
-                  <i class="bi bi-box-seam"></i>
-                </div>
-                <h6>Ingredient Distribution</h6>
-                <p>
-                  We supply high-quality specialty ingredients sourced from trusted
-                  global manufacturers, ensuring consistency and regulatory
-                  compliance.
-                </p>
-              </div>
-            </div>
-      
-            <div class="col-md-4">
-                <div class="what-card">
-                  <div class="what-icon">
-                    <i class="bi bi-tools"></i>
-                  </div>
-                <h6>Technical & Application Support</h6>
-                <p>
-                  Our experts provide formulation guidance, application insights, and
-                  performance optimization to help customers accelerate product
-                  development.
-                </p>
-              </div>
-            </div>
-      
-            <div class="col-md-4">
-              <div class="what-card">
-                <div class="what-icon">
-                  <i class="bi bi-truck"></i>
-                </div>
-                <h6>Supply Chain Solutions</h6>
-                <p>
-                  We ensure dependable supply through efficient logistics, inventory
-                  planning, and long-term sourcing strategies.
-                </p>
-              </div>
-            </div>
-      
-          </div>
-        </div>
-      </section>
-      
-      <section class="journey-section py-5">
-        <div class="container">
-      
-            <div class="text-center mb-5">
-                <h2>Our journey</h2>
-                  <!-- Intro -->
-                  <div class="text-center mb-4">
-                    <p class="col-lg-10 mx-auto">
-                      Novasol Ingredients is more than a food ingredient supplier and
-                      distributor. We are a client-centric brand and a distinguished
-                      benchmark in the food ingredient market.
-                    </p>
-                  </div>
-              
-                  <!-- TIMELINE NAV -->
-                  <div class="journey-timeline">
-                    <div class="journey-line"></div>
-              
-                   
-                    <button class="journey-dot active" data-index="3">2013</button>
-            
-                    <button class="journey-dot" data-index="6">2018</button>
-                    <button class="journey-dot" data-index="7">2019</button>
-                    <button class="journey-dot" data-index="8">2022</button>
-                    <button class="journey-dot" data-index="9">2023</button>
-                    <button class="journey-dot" data-index="10">2024</button>
-                  </div>
-              
-                  <!-- CONTENT -->
-                  <div class="journey-content mt-5">
-                    <div class="row align-items-center g-5">
-              
-                      <div class="col-lg-7">
-                        <img
-                          id="journeyImage"
-                          src="04-Sugar-Management.webp"
-                          class="img-fluid rounded-4"
-                          alt="Journey Image"
-                        />
-                      </div>
-              
-                      <div class="col-lg-5">
-                        <h3 id="journeyYear">2013</h3>
-                        <p id="journeyText">
-                            src="04-Sugar-Management.webp"
-                          Established Gujarat Food Web Pvt. Ltd., a research and development
-                          centre for food ingredient innovation.
-                        </p>
-                      </div>
-              
-                    </div>
-              
-                    <!-- ARROWS -->
-                    <div class="journey-arrows">
-                      <button id="prevJourney">‹</button>
-                      <button id="nextJourney">›</button>
-                    </div>
-                  </div>
-              
-                </div>
-              </section>
-              
-                  
-          
-      
-              <section class="mission-vision-section py-5 bg-light">
-                <div class="container">
-              
-                  <!-- Header -->
-                  <div class="text-center mb-5">
-                    <h2>Mission & Vision</h2>
-                    <p class="col-lg-8 mx-auto">
-                      Our mission defines what we deliver today, while our vision represents
-                      the future we are building toward.
-                    </p>
-                  </div>
-              
-                  <!-- Flow -->
-                  <div class="mission-vision-flow">
-              
-                    <!-- Mission -->
-                    <div class="mv-card">
-                      <span class="mv-label">MISSION</span>
-                      <h3>Strong Foundations</h3>
-                      <p>
-                        We deliver reliable, compliant, and high-quality ingredient solutions
-                        that enable manufacturers to innovate with confidence.
-                      </p>
-              
-                      <ul>
-                        <li>Consistent ingredient supply</li>
-                        <li>Technical and application expertise</li>
-                        <li>Quality and regulatory assurance</li>
-                      </ul>
-                    </div>
-              
-                    <!-- Arrow -->
-                    <div class="mv-arrow">
-                      <span>→</span>
-                    </div>
-              
-                    <!-- Vision -->
-                    <div class="mv-card">
-                      <span class="mv-label">VISION</span>
-                      <h3>Industry Leadership</h3>
-                      <p>
-                        We aspire to shape the future of ingredient solutions through
-                        innovation, sustainability, and long-term partnerships.
-                      </p>
-              
-                      <ul>
-                        <li>Sustainable and responsible sourcing</li>
-                        <li>Advanced application and innovation labs</li>
-                        <li>Global collaboration and growth</li>
-                      </ul>
-                    </div>
-              
-                  </div>
-                </div>
-              </section>
-              
-      
 
-          <!-- reuse your existing testimonials swiper here -->
-          <section class="milestones-section py-5 bg-light">
-            <div class="container">
-          
-              <!-- Header -->
-              <div class="text-center mb-5">
-                <h2>Our Milestones</h2>
-                <p class="col-lg-8 mx-auto">
-                  Key achievements that reflect our growth, scale, and long-term
-                  commitment to our partners.
-                </p>
-              </div>
-          
-              <!-- Milestones -->
-              <div class="row text-center g-4">
-          
-                <div class="col-md-3">
-                  <div class="milestone-card">
-                    <h3 data-count="10">5</h3>
-                    <span>+ Years of Experience</span>
-                  </div>
-                </div>
-          
-                <div class="col-md-3">
-                  <div class="milestone-card">
-                    <h3 data-count="100">10</h3>
-                    <span>+ Products Distributed</span>
-                  </div>
-                </div>
-          
-                <div class="col-md-3">
-                  <div class="milestone-card">
-                    <h3 data-count="4">1</h3>
-                    <span>+Industries Served</span>
-                  </div>
-                </div>
-          
-                <div class="col-md-3">
-                  <div class="milestone-card">
-                    <h3 data-count="25">50</h3>
-                    <span>+ Global Partners</span>
-                  </div>
-                </div>
-          
-              </div>
-            </div>
-          </section>
-          
-        </div>
-      </section>
-      <section class="team-section py-5">
-        <div class="container">
-      
-          <!-- Header -->
-          <div class="text-center mb-5">
-            <h2>Our Team</h2>
-            <p class="col-lg-8 mx-auto">
-              A team of experienced professionals driving quality, innovation, and
-              long-term partnerships.
-            </p>
+  <!-- ================= OUR INSPIRATION ================= -->
+  <section class="founder-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Left Image -->
+        <div class="col-lg-5 text-center">
+          <div class="founder-img-wrap">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" class="img-fluid" alt="">
           </div>
-      
-          <!-- Marquee -->
-          <div class="team-marquee">
-            <div class="team-track">
-      
-              <!-- TEAM MEMBER -->
-              <div class="team-card">
-                <img src="team-1.jpg" alt="Team Member">
-                <h6>Rohit Sharma</h6>
-                <span>Head – Operations</span>
-              </div>
-      
-              <div class="team-card">
-                <img src="team-2.jpg" alt="Team Member">
-                <h6>Anita Mehra</h6>
-                <span>Director – Quality</span>
-              </div>
-      
-              <div class="team-card">
-                <img src="team-3.jpg" alt="Team Member">
-                <h6>Vikram Patel</h6>
-                <span>Technical Lead</span>
-              </div>
-      
-              <div class="team-card">
-                <img src="team-4.jpg" alt="Team Member">
-                <h6>Neha Kapoor</h6>
-                <span>Procurement Head</span>
-              </div>
-      
-              <!-- DUPLICATE SET (required for loop) -->
-      
-              <div class="team-card">
-                <img src="team-1.jpg" alt="Team Member">
-                <h6>Rohit Sharma</h6>
-                <span>Head – Operations</span>
-              </div>
-      
-              <div class="team-card">
-                <img src="team-2.jpg" alt="Team Member">
-                <h6>Anita Mehra</h6>
-                <span>Director – Quality</span>
-              </div>
-      
-              <div class="team-card">
-                <img src="team-3.jpg" alt="Team Member">
-                <h6>Vikram Patel</h6>
-                <span>Technical Lead</span>
-              </div>
-      
-              <div class="team-card">
-                <img src="team-4.jpg" alt="Team Member">
-                <h6>Neha Kapoor</h6>
-                <span>Procurement Head</span>
-              </div>
-      
-            </div>
-          </div>
-      
+          <h5 class="founder-name mt-3">Abhaya</h5>
         </div>
-      </section>
-      <!-- ================= TESTIMONIALS ================= -->
-    <section class="testimonials-section py-5">
-        <div class="container position-relative text-center">
-          <h2 class="mb-2">What Our Clients Say</h2>
-          <p class="mb-5">
-            Trusted by global partners for quality, consistency and innovation.
+
+        <!-- Right Content -->
+        <div class="col-lg-7">
+          <h2 class="section-heading">
+            What we do
+          </h2>
+
+          <p>
+            Abhaya is a family-owned company headquartered in Chennai, India,
+            founded in 1959 by Shri Kawarlal Jain, a visionary philanthropist.
           </p>
-  
-          <!-- Swiper -->
-          <div class="swiper testimonials-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-card">
-                  <p>
-                    “Novasol has transformed our product development with
-                    consistent quality and exceptional service.”
-                  </p>
-                  <h6>Rohit Sharma</h6>
-                  <span>Food Manufacturer</span>
-                </div>
-              </div>
-  
-              <div class="swiper-slide">
-                <div class="testimonial-card">
-                  <p>
-                    “Reliable ingredients, fast delivery, and great technical
-                    support. Highly recommended.”
-                  </p>
-                  <h6>Anita Mehra</h6>
-                  <span>R&D Director</span>
-                </div>
-              </div>
-  
-              <div class="swiper-slide">
-                <div class="testimonial-card">
-                  <p>
-                    “Their innovation pipeline helps us stay ahead of market
-                    trends.”
-                  </p>
-                  <h6>Vikram Patel</h6>
-                  <span>Product Manager</span>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-card">
-                  <p>
-                    “Excellent technical support and consistent quality across
-                    batches.”
-                  </p>
-                  <h6>Sandeep Iyer</h6>
-                  <span>Operations Head</span>
-                </div>
-              </div>
-  
-              <div class="swiper-slide">
-                <div class="testimonial-card">
-                  <p>“A dependable partner for long-term ingredient sourcing.”</p>
-                  <h6>Neha Kapoor</h6>
-                  <span>Procurement Manager</span>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Navigation -->
-          <div class="testimonial-prev"></div>
-          <div class="testimonial-next"></div>
-        </div>
-      </section>
-      
-  
-      
-      <!-- ================= footer ================= -->
-    <footer class="main-footer">
-        <div class="container">
-          <!-- TOP CTA -->
-          <div class="footer-cta">
-            <h3>Get the latest insights, market trends and more.</h3>
-            <a href="#" class="btn btn-primary">Subscribe Now</a>
-          </div>
-  
-          <hr class="footer-divider" />
-  
-          <!-- FOOTER LINKS -->
-          <div class="row gy-4">
-            <!-- Quick Links -->
-            <div class="col-md-6 col-lg-3">
-              <h5 class="footer-title">Quick Links</h5>
-              <ul class="footer-links">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Principal</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Application Lab</a></li>
-              </ul>
-            </div>
-  
-            <!-- Useful Links -->
-            <div class="col-md-6 col-lg-3">
-              <h5 class="footer-title">Useful Links</h5>
-              <ul class="footer-links">
-                <li><a href="#">CSR Policy</a></li>
-                <li><a href="#">Disclaimer</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </div>
-  
-            <!-- Insights -->
-            <div class="col-md-6 col-lg-3">
-              <h5 class="footer-title">Insights</h5>
-              <ul class="footer-links">
-                <li><a href="#">New Products</a></li>
-                <li><a href="#">Market Trends</a></li>
-                <li><a href="#">Media Centre</a></li>
-              </ul>
-            </div>
-  
-            <!-- Contact -->
-            <div class="col-md-6 col-lg-3">
-              <h5 class="footer-title">Reach out to us</h5>
-              <p class="footer-text">
-                KP Manish Global Ingredients Pvt. Ltd.<br />
-                41 Raghunayakulu Street,<br />
-                Chennai – 600003, Tamil Nadu, India
-              </p>
-              <p class="footer-text">📞 +91 44 44212345</p>
-              <p class="footer-text">✉ info@kpmanish.com</p>
-            </div>
-          </div>
-  
-          <hr class="footer-divider" />
-  
-          <!-- BOTTOM BAR -->
-          <div class="footer-bottom">
-            <p>© 2026 KP Manish. All rights reserved.</p>
-  
-            <div class="footer-social">
-              <span>Follow us on:</span>
-              <a href="#" class="social-icon linkedin">
-                <i class="bi bi-linkedin"></i>
-              </a>
-            </div>
+
+          <p>
+            We are a leading supplier of high quality ingredients sourced globally
+            serving Pharma, Food, Nutra and Cosmetics.
+          </p>
+
+          <h3 class="section-heading mt-4">Mission and Vision</h3>
+
+          <div class="mission-box">
+            To create healthy and quality lifestyle with an extensive network
+            across the globe in Pharma, Food and Nutra by sourcing ethically and
+            delivering the right value at the right time.
           </div>
         </div>
-  
-        <!-- WhatsApp Floating -->
-        <a href="#" class="whatsapp-float">
-          <i class="bi bi-whatsapp"></i>
-        </a>
-      </footer>
-      <script>
-        const journeyData = [
-          { year: "1990", text: "Foundation laid.", img: "journey-1990.jpg" },
-          { year: "1997", text: "Expanded operations.", img: "journey-1997.jpg" },
-          { year: "2005", text: "Entered specialty ingredients.", img: "journey-2005.jpg" },
-          {
-            year: "2013",
-            text: "Established Gujarat Food Web Pvt. Ltd., a research and development centre for food ingredient innovation.",
-            img: "journey-2013.jpg",
-          },
-          { year: "2014", text: "Strengthened R&D capabilities.", img: "journey-2014.jpg" },
-          { year: "2017", text: "Expanded sourcing network.", img: "journey-2017.jpg" },
-          { year: "2018", text: "Added new ingredient portfolios.", img: "journey-2018.jpg" },
-          { year: "2019", text: "Supply chain expansion.", img: "journey-2019.jpg" },
-          { year: "2022", text: "Pan-India growth.", img: "journey-2022.jpg" },
-          { year: "2023", text: "Global partnerships.", img: "journey-2023.jpg" },
-          { year: "2024", text: "Advanced application labs.", img: "journey-2024.jpg" },
-        ];
-      
-        let currentIndex = 3;
-      
-        const dots = document.querySelectorAll(".journey-dot");
-        const yearEl = document.getElementById("journeyYear");
-        const textEl = document.getElementById("journeyText");
-        const imgEl = document.getElementById("journeyImage");
-      
-        function updateJourney(index) {
-          dots.forEach(d => d.classList.remove("active"));
-          dots[index].classList.add("active");
-      
-          yearEl.textContent = journeyData[index].year;
-          textEl.textContent = journeyData[index].text;
-          imgEl.src = journeyData[index].img;
-      
-          currentIndex = index;
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MILESTONES ================= -->
+  <section class="Milestones">
+    <div class="container text-center">
+      <h2 class="section-heading">Milestones</h2>
+        <p class="mb-5">
+          Trusted by global partners for quality, consistency and innovation.
+        </p>
+      <div class="row g-4 text-center">
+        Image
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= OUR TEAM ================= -->
+  <section class="our-team">
+    <div class="container text-center">
+       <h2 class="section-heading">Meet our team</h2>
+        <p class="mb-5">
+          Trusted by global partners for quality, consistency and innovation.
+        </p>
+
+      <div class="position-relative">
+
+        <!-- Swiper -->
+        <div class="swiper teamSwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="">
+                <h6>Managing Director</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="">
+                <h6>Operations Head</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c" alt="">
+                <h6>Sales Head</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="team-card">
+                <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a" alt="">
+                <h6>Marketing Lead</h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="team-nav team-prev">
+          <i class="bi bi-arrow-left"></i>
+        </div>
+        <div class="team-nav team-next">
+          <i class="bi bi-arrow-right"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="testimonials-section">
+    <div class="container text-center">
+
+      <h2 class="section-heading">What Our Clients Say</h2>
+      <p class="mb-5">
+        Trusted by global partners for quality, consistency and innovation.
+      </p>
+
+      <div class="position-relative">
+
+        <div class="swiper testimonials-swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+
+                <div class="testimonial-avatar">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohit Sharma">
+                </div>
+
+                <p>
+                  “Novasol has transformed our product development with
+                  consistent quality and exceptional service.”
+                </p>
+
+                <h6>Rohit Sharma</h6>
+                <span>Food Manufacturer</span>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+
+                <div class="testimonial-avatar">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohit Sharma">
+                </div>
+
+                <p>
+                  “Novasol has transformed our product development with
+                  consistent quality and exceptional service.”
+                </p>
+
+                <h6>Rohit Sharma</h6>
+                <span>Food Manufacturer</span>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+
+                <div class="testimonial-avatar">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohit Sharma">
+                </div>
+
+                <p>
+                  “Novasol has transformed our product development with
+                  consistent quality and exceptional service.”
+                </p>
+
+                <h6>Rohit Sharma</h6>
+                <span>Food Manufacturer</span>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+
+                <div class="testimonial-avatar">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohit Sharma">
+                </div>
+
+                <p>
+                  “Novasol has transformed our product development with
+                  consistent quality and exceptional service.”
+                </p>
+
+                <h6>Rohit Sharma</h6>
+                <span>Food Manufacturer</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+
+                <div class="testimonial-avatar">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohit Sharma">
+                </div>
+
+                <p>
+                  “Novasol has transformed our product development with
+                  consistent quality and exceptional service.”
+                </p>
+
+                <h6>Rohit Sharma</h6>
+                <span>Food Manufacturer</span>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- arrows -->
+        <button class="testimonial-prev slider-arrow">←</button>
+        <button class="testimonial-next slider-arrow">→</button>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="main-footer text-white">
+    <div class="container">
+
+      <div class="row align-items-center footer-top pt-5">
+        <div class="col-12 col-md-8">
+          <h3 class="mb-0 footer-heading">
+            Get the latest insights, market trends and more.
+          </h3>
+        </div>
+
+        <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+          <a href="#" class="btn btn-light footer-btn px-4 py-2">
+            Subscribe Now!
+          </a>
+        </div>
+      </div>
+
+      <hr class="border-light opacity-50">
+
+      <div class="row gy-4 pt-4">
+
+        <!-- Quick Links -->
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Products</a></li>
+            <li><a href="#" class="footer-link">Principal</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Application Lab</a></li>
+          </ul>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">Useful Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">CSR Policy</a></li>
+            <li><a href="#" class="footer-link">Disclaimer</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Insights -->
+        <div class="col-5 col-lg-3">
+          <h5 class="footer-title">Insights</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">New Products</a></li>
+            <li><a href="#" class="footer-link">Market Trends</a></li>
+            <li><a href="#" class="footer-link">Media Centre</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-7 col-lg-3 text-white">
+          <h5 class="footer-title">Reach out to us</h5>
+          <address class="footer-address mb-0">
+            <i class="bi bi-geo-alt"></i> 2nd Floor, S2. Pocket-S, Okhla Phase 2.<br>
+            New Delhi, Delhi-110020<br>
+            <i class="bi bi-telephone"></i> +91 90685 39669<br>
+            <i class="bi bi-envelope"></i> info@abhayainternational.com
+          </address>
+
+        </div>
+
+
+      </div>
+
+      <hr class="border-light opacity-50">
+
+      <!-- Bottom -->
+      <div
+        class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-white text-center text-md-start">
+
+        <p class="mb-0 text-white small">Copyright © 2026 Abhaya. All rights reserved.</p>
+
+        <div class="d-flex align-items-center justify-content-center gap-2 py-2">
+          <span class="small text-white">Follow us:</span>
+          <a href="https://www.linkedin.com/company/abhaya-international-llp/" class="social-icon"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/abhayainternational" class="social-icon"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100092588282020" class="social-icon"><i
+              class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+        </div>
+
+      </div>
+
+
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Product Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    window.addEventListener("scroll", function () {
+      const nav = document.querySelector(".main-nav");
+      nav.classList.toggle("stuck", window.scrollY > 10);
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".product-swiper", {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      loop: true,
+      speed: 900,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: ".product-next",
+        prevEl: ".product-prev"
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.2
+        },
+        576: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 4
         }
-      
-        dots.forEach(dot => {
-          dot.addEventListener("click", () => {
-            updateJourney(parseInt(dot.dataset.index));
-          });
-        });
-      
-        document.getElementById("prevJourney").onclick = () => {
-          if (currentIndex > 0) updateJourney(currentIndex - 1);
-        };
-      
-        document.getElementById("nextJourney").onclick = () => {
-          if (currentIndex < journeyData.length - 1) updateJourney(currentIndex + 1);
-        };
-      </script>
-      
-      <script>
-        const counters = document.querySelectorAll(".milestone-card h3");
-        let started = false;
-      
-        function runCounters() {
-          if (started) return;
-      
-          counters.forEach(counter => {
-            const target = +counter.dataset.count;
-            let count = 0;
-            const step = Math.max(1, Math.floor(target / 50));
-      
-            const update = () => {
-              count += step;
-              if (count < target) {
-                counter.textContent = count;
-                requestAnimationFrame(update);
-              } else {
-                counter.textContent = target;
-              }
-            };
-            update();
-          });
-      
-          started = true;
+      }
+    });
+
+
+  </script>
+  <!-- Rewards & Recognition Swiper -->
+  <script>
+    var swiper = new Swiper(".recognition-swiper", {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      loop: true,
+      speed: 800,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.4
+        },
+        576: {
+          slidesPerView: 2.2
+        },
+        992: {
+          slidesPerView: 4
         }
-      
-        const observer = new IntersectionObserver(
-          entries => {
-            if (entries[0].isIntersecting) {
-              runCounters();
-              observer.disconnect();
-            }
-          },
-          { threshold: 0.4 }
-        );
-      
-        observer.observe(document.querySelector(".milestones-section"));
-      </script>
-      
-      <script>
-        const teamCards = document.querySelectorAll(".team-card");
-      
-        teamCards.forEach(card => {
-          card.addEventListener("click", () => {
-            // If already active → deactivate
-            if (card.classList.contains("active")) {
-              card.classList.remove("active");
-            } else {
-              // Remove active from all
-              teamCards.forEach(c => c.classList.remove("active"));
-              // Activate clicked card
-              card.classList.add("active");
-            }
-          });
-        });
-      </script>
-      <!--testimonials-->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          new Swiper(".testimonials-swiper", {
-            loop: true,
-            centeredSlides: true,
-            slidesPerView: 1,
-            spaceBetween: 30,
-            speed: 600,
-  
-            autoplay: {
-              delay: 4500,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            },
-  
-            navigation: {
-              nextEl: ".testimonial-next",
-              prevEl: ".testimonial-prev",
-            },
-  
-            breakpoints: {
-              992: {
-                slidesPerView: 4,
-              },
-            },
-          });
-        });
-      </script>
-    </body>
-    </html>
-      
-      
-      
-      
-      
+      }
+    });
+
+  </script>
+  <!--testimonials-->
+  <script>
+    var swiper = new Swiper(".testimonials-swiper", {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      loop: true,
+      speed: 800,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: ".testimonial-next",
+        prevEl: ".testimonial-prev"
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1
+        },
+        768: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 3
+        }
+      }
+    });
+
+  </script>
+
+  <script>
+    const cards = document.querySelectorAll('.office-card')
+    const container = document.querySelector('.office-cards')
+    const firstCard = cards[0]
+
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        cards.forEach(c => c.classList.remove('active'))
+        card.classList.add('active')
+      })
+    })
+
+    container.addEventListener('mouseleave', () => {
+      cards.forEach(c => c.classList.remove('active'))
+      firstCard.classList.add('active')
+    })
+  </script>
+
+  <script>
+  new Swiper(".teamSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".team-next",
+      prevEl: ".team-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
+  });
+</script>
+
+</body>
+
+</html>

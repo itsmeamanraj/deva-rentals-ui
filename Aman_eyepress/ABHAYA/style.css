@@ -111,8 +111,13 @@
     font-size: 1.2rem;
   }
 
+  .navbar-brand img {
+    width: 102px;
+    height: 66px;
+  }
+
   .nav-link {
-    color: #000000 !important;
+    color: #000000;
     margin: 0 14px;
     font-weight: 700;
     position: relative;
@@ -134,6 +139,10 @@
 
   .nav-link:hover::after {
     width: 100%;
+  }
+
+  .nav-link:hover {
+    color: var(--brand-orange);
   }
 
   /* Custom hamburger */
@@ -162,7 +171,7 @@
     }
 
     .nav-link {
-      margin: 12px 0;
+      margin: 0;
       text-align: center;
       font-size: 1.1rem;
     }
@@ -328,6 +337,11 @@
 
     .carousel-indicators {
       display: none;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      top: -169px;
     }
   }
 
@@ -502,7 +516,7 @@
   }
 
   .section-heading {
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 600;
     color: var(--brand-orange);
   }
@@ -561,11 +575,11 @@
 
   .product-card img {
     width: 100%;
-    height: 260px;
+    height: 366px;
     object-fit: cover;
   }
 
-  /* footer */
+  /* card-footer product */
   .card-footer {
     background: var(--brand-orange);
     color: #fff;
@@ -602,7 +616,7 @@
   }
 
 
-  /* ================= FOOTER ================= */
+  /* ================= card product FOOTER ================= */
 
   .card-footer {
     margin-top: auto;
@@ -1174,6 +1188,61 @@
     font-size: 14px;
   }
 
+  .footer-heading {
+    font-size: 28px;
+    /* thoda bada */
+    font-weight: 600;
+  }
+
+  .footer-btn {
+    border-radius: 30px;
+    /* pill shape */
+    font-weight: 600;
+    color: #f38722;
+    /* tumhara brand orange */
+    border: none;
+  }
+
+  .footer-title {
+    font-size: 18px;
+    /* heading size */
+    font-weight: 600;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+  }
+
+  .footer-link {
+    font-size: 15px;
+    /* link thoda bada */
+    line-height: 1.8;
+    color: #fff;
+    opacity: 0.9;
+    text-decoration: none;
+  }
+
+  .footer-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  .main-footer address {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .footer-address {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .footer-address i {
+    margin-right: 6px;
+    font-size: 18px;
+  }
+
+
+
+
 
   /* ===== REWARDS & RECOGNITION ===== */
 
@@ -1432,14 +1501,26 @@
   }
 
   .category-hero-product {
-    background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") center/cover no-repeat;
+    min-height: 50vh;
+    /* hero height */
+    width: 100%;
     position: relative;
   }
 
-  .category-hero-overlay {
-    background: rgba(0, 0, 0, 0.55);
-    /* dark overlay for readability */
+  @media (max-width: 768px) {
+    .category-hero-product {
+      min-height: 25vh;
+    }
   }
+
+  .category-hero-overlay {
+    position: absolute;
+    inset: 0;
+    /* top:0 left:0 right:0 bottom:0 */
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+  }
+
 
   .content-section {
     background: #fff;
@@ -1447,42 +1528,59 @@
   }
 
   /* Base button */
+  /* Base button */
   .accordion-button {
-    color: #111;
+    font-size: 18px;
     font-weight: 500;
-    background: #fff;
-  }
-
-  /* Active (opened) */
-  .accordion-button:not(.collapsed) {
-    background: #f07f18;
-    color: #fff;
-    box-shadow: none;
+    padding: 18px 0;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #111;
+    transition: all 0.25s ease;
   }
 
   /* Remove blue focus */
   .accordion-button:focus {
-    box-shadow: none;
-    border-color: #f07f18;
+    box-shadow: none !important;
+    outline: none;
   }
 
-  /* Remove blue active */
-  .accordion-button:active {
-    background: #f07f18;
-    color: #fff;
+  /* Remove blue active bg */
+  .accordion-button:not(.collapsed) {
+    background: transparent !important;
+    color: #111;
   }
 
-  /* Remove blue outline completely */
-  .accordion-button::after {
-    filter: invert(1);
-  }
-
-  /* Optional: nicer border */
+  /* Bottom underline only */
   .accordion-item {
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    overflow: hidden;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0;
   }
+
+  /* REMOVE Bootstrap default arrow */
+  .accordion-button::after {
+    content: "+";
+    /* default closed */
+    font-size: 22px;
+    font-weight: 600;
+    transform: none !important;
+    background: none !important;
+  }
+
+  /* When open show - */
+  .accordion-button:not(.collapsed)::after {
+    content: "−";
+  }
+
+  /* Body */
+  .accordion-body {
+    font-size: 16px;
+    line-height: 1.7;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 
 
   /* ======== aditiya contact us page css=========== */
@@ -1587,11 +1685,11 @@
     scroll-margin-top: 80px;
   }
 
-  .collab-section,
-  .presence-section,
-  .contact-page {
+  /* .collab-section,
+  .presence-section
+  {
     position: relative;
-  }
+  } */
 
   .collab-section::before,
   .presence-section::before {
@@ -1621,7 +1719,8 @@
   }
 
   .collab-card:hover,
-  .office-card:hover {
+  .office-card:hover,
+  .office-card.active {
     transform: translateY(-6px);
   }
 
@@ -1893,52 +1992,59 @@
     }
   }
 
-  .contact-page {
-    max-width: 1300px;
-    margin: auto;
-    padding: 80px 0;
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 60px;
-  }
-
+  /* ================= contact section page INFO ================= */
 
   .info-item {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     align-items: center;
-    margin-bottom: 22px
+    margin-bottom: 14px;
   }
 
   .info-item i {
     color: #ff8a00;
-    font-size: 20px
+    font-size: 18px;
   }
 
-  /* ===== OFFICE CARDS FIXED ===== */
+  /* ================= OFFICE CARDS ================= */
+
   .office-cards {
     display: flex;
     gap: 14px;
     margin-top: 20px;
+    width: 100%;
   }
 
   .office-card {
     position: relative;
-    flex: 0 0 110px;
+    flex: 0 0 73px;
     height: 260px;
     border-radius: 22px;
     overflow: hidden;
     cursor: pointer;
-    transition: flex .55s ease, box-shadow .55s ease;
+    transition: all .5s ease;
+    height: 353px;
+
   }
 
+  .office-card.active {
+    flex: 0 0 368px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, .35);
+  }
+
+  /* Image */
   .office-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform .55s ease;
+    transition: transform .5s ease;
   }
 
+  .office-card.active img {
+    transform: scale(1.1);
+  }
+
+  /* Overlay */
   .office-card::after {
     content: "";
     position: absolute;
@@ -1946,6 +2052,7 @@
     background: linear-gradient(to top, rgba(0, 0, 0, .85), rgba(0, 0, 0, .2) 60%);
   }
 
+  /* Title */
   .office-title {
     position: absolute;
     bottom: 16px;
@@ -1955,10 +2062,11 @@
     color: #fff;
     font-size: 14px;
     font-weight: 500;
-    transition: opacity .3s ease;
     z-index: 2;
+    transition: opacity .3s ease;
   }
 
+  /* Info */
   .office-info {
     position: absolute;
     bottom: 20px;
@@ -1969,27 +2077,41 @@
     line-height: 1.5;
     opacity: 0;
     transform: translateY(20px);
-    transition: all .45s ease;
+    transition: all .4s ease;
     z-index: 2;
   }
 
-  /* 👉 PROPER EXPAND LOGIC */
-  .office-card:hover {
-    flex: 0 0 340px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, .35);
-  }
-
-  .office-card:hover img {
-    transform: scale(1.1);
-  }
-
-  .office-card:hover .office-info {
+  .office-card.active .office-info {
     opacity: 1;
     transform: translateY(0);
   }
 
-  .office-card:hover .office-title {
+  .office-card.active .office-title {
     opacity: 0;
+  }
+
+  /* ================= CONTACT FORM ================= */
+
+  .contact-form {
+    background: #f8dacd;
+    border-radius: 26px;
+    padding: 40px;
+  }
+
+  /* Override Bootstrap a bit */
+  .contact-form .form-control,
+  .contact-form .form-select {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #111;
+    background: transparent;
+    font-size: 14px;
+  }
+
+  .contact-form .form-control:focus,
+  .contact-form .form-select:focus {
+    box-shadow: none;
+    border-color: #f07f18;
   }
 
   /* FORM */
@@ -2000,21 +2122,21 @@
     padding: 45px 50px;
   }
 
-  .form-grid {
+  .contact-form .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 26px;
   }
 
-  .form-group {
+  .contact-form .form-group {
     position: relative
   }
 
-  .form-group.full {
+  .contact-form .form-group.full {
     grid-column: 1/-1
   }
 
-  input,
+  .contact-form input,
   select,
   textarea {
     width: 100%;
@@ -2026,96 +2148,61 @@
     outline: none;
   }
 
-  textarea {
+  .contact-form textarea {
     height: 80px;
     resize: none
   }
 
-  label {
+  .contact-form label {
     position: absolute;
     top: -16px;
     font-size: 12px;
     color: #111
   }
 
-  /* =====================================================
-       MOBILE VIEW – FINAL UI (MATCHES DESIGN)
-    ===================================================== */
-  @media (max-width: 900px) {
+  /* ================= MOBILE ================= */
 
-    /* ================= CONTACT PAGE LAYOUT ================= */
-    .contact-page {
-      display: block;
-      padding: 0 14px;
-    }
+  @media (max-width: 768px) {
 
-    /* ================= OFFICE CARDS ================= */
     .office-cards {
-      display: flex;
       flex-direction: column;
       gap: 18px;
-      margin-top: 20px;
     }
 
-    .office-card {
+    .office-card,
+    .office-card.active {
       flex: none;
       width: 100%;
       height: 180px;
-      border-radius: 18px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
     }
 
-    /* Disable hover behavior completely */
-    .office-card:hover {
-      flex: none;
-      transform: none;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
-    }
-
-    .office-card img {
-      transform: none;
-    }
-
-    /* Office text layout (like screenshot) */
     .office-title {
       writing-mode: horizontal-tb;
       transform: none;
-      position: absolute;
-      bottom: auto;
       top: 16px;
       left: 16px;
+      bottom: auto;
       font-size: 16px;
-      font-weight: 600;
       opacity: 1;
     }
 
     .office-info {
       opacity: 1;
       transform: none;
-      font-size: 13px;
-      line-height: 1.5;
     }
 
-    /* ================= CONTACT FORM ================= */
     .contact-form {
-      margin-top: 40px;
-      padding: 28px 20px;
-      border-radius: 20px;
+      margin-top: 46px;
     }
 
-    .contact-form h2 {
-      font-size: 26px;
-      margin-bottom: 22px;
-    }
-
-    /* Single column form */
-    .form-grid {
+    .contact-form .form-grid {
       grid-template-columns: 1fr;
       gap: 22px;
     }
 
     /* FLAT INPUT STYLE (NO FLOATING LABELS) */
-    .form-group label {
+    .contact-form .form-group label {
       position: static;
       display: block;
       font-size: 13px;
@@ -2123,7 +2210,7 @@
       color: #333;
     }
 
-    input,
+    .contact-form input,
     select,
     textarea {
       font-size: 16px;
@@ -2131,16 +2218,17 @@
       border-bottom: 1px solid #999;
     }
 
-    textarea {
+    .contact-form textarea {
       height: 90px;
     }
 
     /* Remove floating label effects */
-    input:focus+label,
-    textarea:focus+label {
+    .contact-form input:focus+label,
+    .contact-form textarea:focus+label {
       color: #333;
     }
   }
+
 
 
   /* ================= aditiya CAREER – JOIN OUR TEAM ================= */
@@ -2966,4 +3054,116 @@
 
   .labPanelImage:hover img {
     transform: scale(1.08);
+  }
+
+
+  /* about us page css start here  */
+  .our-team {
+    background-color: #fff8f2;
+  }
+
+  .teamSwiper {
+    padding: 20px 0;
+  }
+
+  .team-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .team-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 12px;
+  }
+
+  .team-card h6 {
+    font-weight: 600;
+    margin-top: 8px;
+  }
+
+  /* Navigation buttons */
+  .team-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f38722;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  /* Desktop */
+  .team-prev {
+    left: -20px;
+  }
+
+  .team-next {
+    right: -20px;
+  }
+
+  /* Mobile fix */
+  @media (max-width: 768px) {
+    .team-prev {
+      left: 10px;
+    }
+
+    .team-next {
+      right: 10px;
+    }
+
+    .team-nav {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .founder-section {
+    background: #f7f7f7;
+    overflow-x: hidden;
+  }
+
+  .founder-img-wrap {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .founder-img-wrap img {
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .founder-name {
+    font-weight: 600;
+    color: var(--brand-orange);
+  }
+
+  .mission-box {
+    border-left: 4px solid #e91e63;
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+
+  /* blog section card  */
+  .blog-card-img {
+    height: 180px;
+    object-fit: cover;
   }

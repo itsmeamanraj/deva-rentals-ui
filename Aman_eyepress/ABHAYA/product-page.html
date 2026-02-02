@@ -21,31 +21,46 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top main-nav">
         <div class="container nav-mobile px-4">
 
-            <a class="navbar-brand" href="#">
-                <strong>ABHAYA</strong>
-            </a>
+        <a class="navbar-brand" href="#">
+            <img src="img/abhaya-logo.png" alt="">
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false">
-                <span class="toggler-line"></span>
-                <span class="toggler-line"></span>
-                <span class="toggler-line"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false">
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav mx-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
-                    <li class="nav-item"><a class="nav-link" href="application.html">Application Lab</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="product-category.html">Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="application-lab.html">Application Lab</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Insights</a></li>
+            <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
 
         </div>
     </nav>
 
+      <!-- ================= ABOUT HERO ================= -->
+    <section class="category-hero-product"
+    style="background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat; position:relative; min-height: 30vh;">
+
+    <!-- <div class="category-hero-overlay">
+        <div class="container h-100">
+        <div class="row align-items-center h-100">
+            <div class="col-lg-10 text-white">
+            <h1 class="fw-bold mb-3">About Us</h1>
+            </div>
+        </div>
+        </div>
+    </div> -->
+
+    </section>
     <!-- ===catgory section  -->
     <section class="category-hero py-3">
         <div class="container">
@@ -155,7 +170,7 @@
                             <div class="row g-0 align-items-center">
 
                                 <div class="col-md-3 text-center p-3">
-                                    <img src="https://via.placeholder.com/180x80" class="img-fluid">
+                                    <img src="https://picsum.photos/400/300" class="img-fluid">
                                 </div>
 
                                 <div class="col-md-6 p-3">
@@ -170,9 +185,9 @@
                                 </div>
 
                                 <div class="col-md-3 p-3 text-center d-grid gap-2">
-                                    <button class="btn btn-outline-danger">
+                                    <a href="product-details.html" class="btn btn-outline-danger">
                                         View details
-                                    </button>
+                                    </a>
                                     <button class="btn btn-outline-dark">
                                         Quote request
                                     </button>
@@ -185,7 +200,7 @@
                         <div class="card mb-4 shadow-sm">
                             <div class="row g-0 align-items-center">
                                 <div class="col-md-3 text-center p-3">
-                                    <img src="https://via.placeholder.com/180x80" class="img-fluid">
+                                    <img src="https://picsum.photos/400/300" class="img-fluid">
                                 </div>
                                 <div class="col-md-6 p-3">
                                     <h5>AQUA Q10 L10</h5>
@@ -197,7 +212,9 @@
                                     </small>
                                 </div>
                                 <div class="col-md-3 p-3 text-center d-grid gap-2">
-                                    <button class="btn btn-outline-danger">View details</button>
+                                     <a href="product-details.html" class="btn btn-outline-danger">
+                                        View details
+                                    </a>
                                     <button class="btn btn-outline-dark">Quote request</button>
                                 </div>
                             </div>
@@ -211,96 +228,115 @@
     </section>
 
     <!-- ================= FOOTER ================= -->
-    <footer class="main-footer text-white">
-        <div class="container">
+     <footer class="main-footer text-white">
+    <div class="container">
 
-            <div class="row gy-4">
+      <div class="row align-items-center footer-top pt-5">
+        <div class="col-12 col-md-8">
+          <h3 class="mb-0 footer-heading">
+            Get the latest insights, market trends and more.
+          </h3>
+        </div>
 
-                <!-- Quick Links -->
-                <div class="col-6 col-lg-3">
-                    <h5 class="footer-title">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="footer-link">About Us</a></li>
-                        <li><a href="#" class="footer-link">Products</a></li>
-                        <li><a href="#" class="footer-link">Principal</a></li>
-                        <li><a href="#" class="footer-link">Careers</a></li>
-                        <li><a href="#" class="footer-link">Application Lab</a></li>
-                    </ul>
-                </div>
+        <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+          <a href="#" class="btn btn-light footer-btn px-4 py-2">
+            Subscribe Now!
+          </a>
+        </div>
+      </div>
 
-                <!-- Useful Links -->
-                <div class="col-6 col-lg-3">
-                    <h5 class="footer-title">Useful Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="footer-link">CSR Policy</a></li>
-                        <li><a href="#" class="footer-link">Disclaimer</a></li>
-                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
-                    </ul>
-                </div>
+      <hr class="border-light opacity-50">
 
-                <!-- Insights -->
-                <div class="col-6 col-lg-3">
-                    <h5 class="footer-title">Insights</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="footer-link">New Products</a></li>
-                        <li><a href="#" class="footer-link">Market Trends</a></li>
-                        <li><a href="#" class="footer-link">Media Centre</a></li>
-                    </ul>
-                </div>
+      <div class="row gy-4 pt-4">
 
-                <!-- Contact -->
-                <div class="col-6 col-lg-3 text-white">
-                    <h5 class="footer-title">Reach out to us</h5>
-                    <address class="mb-0">
-                        KP Manish Global Ingredients Pvt. Ltd.<br>
-                        41 Raghunayakulu Street, Chennai – 600003<br>
-                        <i class="bi bi-telephone"></i> +91 44 44212345<br>
-                        ✉ info@kpmanish.com
-                    </address>
-                </div>
+        <!-- Quick Links -->
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Products</a></li>
+            <li><a href="#" class="footer-link">Principal</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Application Lab</a></li>
+          </ul>
+        </div>
 
+        <!-- Useful Links -->
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-title">Useful Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">CSR Policy</a></li>
+            <li><a href="#" class="footer-link">Disclaimer</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
 
-            </div>
+        <!-- Insights -->
+        <div class="col-5 col-lg-3">
+          <h5 class="footer-title">Insights</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">New Products</a></li>
+            <li><a href="#" class="footer-link">Market Trends</a></li>
+            <li><a href="#" class="footer-link">Media Centre</a></li>
+          </ul>
+        </div>
 
-            <hr class="border-light opacity-50">
-
-            <!-- Bottom -->
-            <div
-                class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-white text-center text-md-start">
-
-                <p class="mb-0 text-white small">© 2026 Abhaya. All rights reserved.</p>
-
-                <div class="d-flex align-items-center justify-content-center gap-2 py-2">
-                    <span class="small text-white">Follow us:</span>
-                    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-                </div>
-
-            </div>
-
+        <!-- Contact -->
+        <div class="col-7 col-lg-3 text-white">
+          <h5 class="footer-title">Reach out to us</h5>
+          <address class="footer-address mb-0">
+            <i class="bi bi-geo-alt"></i> 2nd Floor, S2. Pocket-S, Okhla Phase 2.<br>
+            New Delhi, Delhi-110020<br>
+            <i class="bi bi-telephone"></i> +91 90685 39669<br>
+            <i class="bi bi-envelope"></i> info@abhayainternational.com
+          </address>
 
         </div>
-    </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      </div>
 
-    <!-- Product Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        window.addEventListener("scroll", function () {
-            const nav = document.querySelector(".main-nav");
-            nav.classList.toggle("stuck", window.scrollY > 10);
-        });
-    </script>
+      <hr class="border-light opacity-50">
 
+      <!-- Bottom -->
+      <div
+        class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-white text-center text-md-start">
+
+        <p class="mb-0 text-white small">Copyright © 2026 Abhaya. All rights reserved.</p>
+
+        <div class="d-flex align-items-center justify-content-center gap-2 py-2">
+          <span class="small text-white">Follow us:</span>
+          <a href="https://www.linkedin.com/company/abhaya-international-llp/" class="social-icon"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/abhayainternational" class="social-icon"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100092588282020" class="social-icon"><i
+              class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+        </div>
+
+      </div>
+
+
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Product Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    window.addEventListener("scroll", function () {
+      const nav = document.querySelector(".main-nav");
+      nav.classList.toggle("stuck", window.scrollY > 10);
+    });
+  </script>
     <script>
         const checkboxes = document.querySelectorAll(".filter-checkbox");
         const appliedBox = document.getElementById("appliedFilters");
@@ -335,6 +371,7 @@
         updateAppliedFilters();
 
     </script>
+
 </body>
 
 </html>
