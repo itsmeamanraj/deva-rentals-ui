@@ -605,10 +605,6 @@
     .slider-wrapper {
       padding: 0 40px;
     }
-
-    .product-card img {
-      height: 220px;
-    }
   }
 
   .swiper-button-lock {
@@ -708,7 +704,7 @@
     }
 
     .product-card img {
-      height: 200px;
+      height: 290px;
     }
 
     .product-nav {
@@ -1581,6 +1577,40 @@
     padding-right: 0;
   }
 
+  .section-title {
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 4px;
+  background: orange;
+}
+
+.custom-list li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  position: relative;
+  padding-left: 28px;
+}
+
+.custom-list li::before {
+  content: "✔";
+  color: orange;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+
 
 
   /* ======== aditiya contact us page css=========== */
@@ -2092,11 +2122,11 @@
 
   /* ================= CONTACT FORM ================= */
 
-  .contact-form {
+  /* .contact-form {
     background: #f8dacd;
     border-radius: 26px;
     padding: 40px;
-  }
+  } */
 
   /* Override Bootstrap a bit */
   .contact-form .form-control,
@@ -2117,9 +2147,8 @@
   /* FORM */
   .contact-form {
     background: #f8dacd;
-    ;
     border-radius: 26px;
-    padding: 45px 50px;
+    padding: 69px 50px;
   }
 
   .contact-form .form-grid {
@@ -2192,9 +2221,9 @@
       transform: none;
     }
 
-    .contact-form {
+    /* .contact-form {
       margin-top: 46px;
-    }
+    } */
 
     .contact-form .form-grid {
       grid-template-columns: 1fr;
